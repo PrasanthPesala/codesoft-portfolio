@@ -1,0 +1,180 @@
+html{
+    scroll-behavior: smooth;
+}
+/*navigation section*/
+#nav{
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+#nav img{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px 10px;
+}
+#nav ul{
+    display: flex;
+    padding: 1px 400px;
+    gap: 80px;
+    list-style: none;
+}
+#nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#nav ul li :hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+#nav::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/*introduction section*/
+#introduction{
+    display: flex;
+    box-shadow: 15px 5px 20px 25px rgb(202, 227, 227);
+    justify-content: space-between;
+}
+#introduction::before{
+    content: "";
+    background-color: rgb(224, 243, 251);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#introduction .introimg img{
+     height: 300px;
+     width: 400px;
+     position: relative;
+     right: 100px;
+     top: 30px;
+     border-radius: 1500px;
+}
+#introduction .intro{
+       display: flex;
+       flex-direction: column;
+       
+}
+#introduction .intro h1{
+    padding: 40px 1px;
+}
+#introduction .intro p{
+    position: relative; 
+    margin-left: 10px;
+    margin-top: 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#introduction .intro ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+ 
+#introduction .intro ul li button{
+    background-color: rgb(178, 70, 178);
+    padding:3px 4px; 
+    font-size: 15px; 
+}
+#introduction .intro ul li button a{
+    text-decoration: none;
+    color: black;
+}
+#introduction .intro ul li button:hover{
+     cursor: pointer;
+     border: 2px solid black;
+     background-color: purple;
+     color: white;
+}
+/*about section*/
+#abt .self h1{
+    font-style: italic;
+}
+#abt .self img{
+    height: 200px ;
+    width: 300px;
+    border-radius: 800px;
+}
+#abt{
+    display: flex;
+    background-color: rgb(210, 241, 252);
+    box-shadow: 15px 5px 20px 25px rgb(206, 235, 242);
+}
+#abt p{
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-left: 400px;
+    padding-top: 100px;
+}
+/*skills section*/
+#sk{
+    display: flex;
+    background-color: rgb(193, 239, 249);
+    box-shadow: 15px 5px 20px 30px rgb(193, 239, 249);
+}
+#sk .msk h1{
+    font-size: 2.8rem;
+}
+#sk .msk ul {
+ display: flex;
+ gap: 50px;
+}
+#sk .msk .ul1{
+    padding-top: 50px;
+    gap: 100px;
+}
+#sk img{
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+    padding-left: 600px;
+    padding-top: 70px;
+    border-bottom-right-radius: 50px;
+}
+/*resume section*/
+#resume{
+    background-color: skyblue;
+    box-shadow: 5px 10px 8px 8px cyan;
+}
+#resume a{text-decoration: none;
+       border: 2px solid black;
+       color: rgb(0, 255, 255);
+       background-color: rgb(9, 13, 16);
+       box-shadow: 2px 2px black;
+}
+ /*contact section*/
+#contact .contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+#contact .contact img{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#contact{
+    background-color: rgb(44, 199, 199);
+    box-shadow: 10px 10px 10px 10px cyan;
+    height: 200px;
+}
+#contact .contact img:hover{
+    transform: rotate(10deg);
+    box-shadow: 5px 5px 8px 8px blue;
+}
+ 
